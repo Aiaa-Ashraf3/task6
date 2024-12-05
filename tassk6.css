@@ -1,0 +1,84 @@
+div{
+    width: 100%;
+    height: 350px;
+    padding-top: 150px;
+    font-size: 40px;
+    background-size: cover;
+   position: relative;
+   color: white;
+   text-align: center;
+}
+.div1{
+    background-image: url(../img/صورة\ السماء.jpg);
+    height: 400px;
+}
+.div2{
+    background-image: url(../img/صورة\ غابة.jpg);
+}
+.div3{
+    background-image: url(../img/جبال\ ثلجية.jpg);
+}
+.div4{
+    background-image: url(../img/صورة\ جزيرة.jpg);
+}
+.pa1{
+    transform: translate(50% 50%);
+    position: absolute; 
+    left: 50%;
+    top: 40%;
+    animation: alternate;
+    animation:moveY 2s infinite linear;
+    
+}
+@keyframes moveY{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-50px);
+    }
+    100%{
+        transform:translateY(50px); 
+    }
+}
+.pa2{
+    
+    left: 40%;
+    top: 40%;
+animation: alternate infinite linear;
+animation-name: opacity;
+animation-duration: 3s ;
+}
+@keyframes opacity{
+0% {
+    opacity: 1;
+}
+
+100% {
+    opacity: 0;
+}
+}
+.pa3{
+    animation:  rotate 2s infinite linear;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+}  
+    0%{
+        transform: rotate(360deg); 
+}
+}
+.pa4{
+    animation: scales 2s infinite ease-in-out;
+    
+}
+@keyframes scales {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
